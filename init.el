@@ -1,8 +1,5 @@
 (require 'package)
 (package-initialize)
-(unless package-archive-contents
-  (package-refresh-contents))
-(package-install-selected-packages)
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 ;; some tools
@@ -47,6 +44,9 @@
  '(standard-indent 2)
  '(typescript-indent-level 2))
 
+(unless package-archive-contents
+  (package-refresh-contents))
+(package-install-selected-packages)
 ;; globally enable flycheck
 ;;(global-flycheck-mode)
 
