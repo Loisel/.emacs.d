@@ -29,6 +29,7 @@
  '(csv-separators '("," ";"))
  '(custom-safe-themes
    '("d91ef4e714f05fff2070da7ca452980999f5361209e679ee988e3c432df24347" "7153b82e50b6f7452b4519097f880d968a6eaf6f6ef38cc45a144958e553fbc6" default))
+ '(debug-on-error nil)
  '(dired-recursive-copies 'always)
  '(ein:completion-backend 'ein:use-ac-backend)
  '(ess-view-data-current-backend 'data\.table+magrittr)
@@ -36,7 +37,7 @@
  '(org-agenda-files
    '("~/dirnliga/org/tasks.org" "~/dirnliga/org/heureka.org" "~/dirnliga/org/notes.org" "~/dirnliga/org/other.org"))
  '(package-selected-packages
-   '(latex-preview-pane sudo-edit docker-compose-mode vscode-icon dired-sidebar use-package typescript-mode ess-view-data po-mode eink-theme jedi magit csv-mode gist websocket dash simple-httpd js2-mode skewer-mode s deferred request request-deferred pyvenv epl pkg-info projectile popup poly-noweb poly-markdown julia-mode ivy highlight-indentation helm-make async helm find-file-in-project ctable ess-R-data-view company ac-helm helm-core poly-R yasnippet solarized-theme alect-themes polymode markdown-mode ein flycheck auto-complete django-mode elpy smartparens ess org htmlize))
+   '(paredit latex-preview-pane sudo-edit docker-compose-mode vscode-icon dired-sidebar use-package typescript-mode ess-view-data po-mode eink-theme jedi magit csv-mode gist websocket dash simple-httpd js2-mode skewer-mode s deferred request request-deferred pyvenv epl pkg-info projectile popup poly-noweb poly-markdown julia-mode ivy highlight-indentation helm-make async helm find-file-in-project ctable ess-R-data-view company ac-helm helm-core poly-R yasnippet solarized-theme alect-themes polymode markdown-mode ein flycheck auto-complete django-mode elpy smartparens ess org htmlize))
  '(pdf-latex-command "xelatex")
  '(python-shell-interpreter "ipython")
  '(reb-re-syntax 'string)
@@ -115,6 +116,8 @@
 
 ;; ibuffer instead of normal buffer view
 (global-set-key (kbd "C-x C-b") 'ibuffer)
+
+(global-set-key (kbd "C-\"") 'add-quotes)
 
 ;; comment-or-uncomment
 (global-set-key (kbd "C-;") 'comment-or-uncomment-region)
@@ -222,3 +225,5 @@ ein:jupyter-default-server-command "/home/alois/miniconda3/envs/psi/bin/jupyter"
 
 (load-theme 'solarized-light t)
 (menu-bar-mode -1)
+
+(elpy-rpc-reinstall-virtualenv)
