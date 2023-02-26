@@ -37,7 +37,7 @@
  '(org-agenda-files
    '("~/dirnliga/org/tasks.org" "~/dirnliga/org/heureka.org" "~/dirnliga/org/notes.org" "~/dirnliga/org/other.org"))
  '(package-selected-packages
-   '(paredit latex-preview-pane sudo-edit docker-compose-mode vscode-icon dired-sidebar use-package typescript-mode ess-view-data po-mode eink-theme jedi magit csv-mode gist websocket dash simple-httpd js2-mode skewer-mode s deferred request request-deferred pyvenv epl pkg-info projectile popup poly-noweb poly-markdown julia-mode ivy highlight-indentation helm-make async helm find-file-in-project ctable ess-R-data-view company ac-helm helm-core poly-R yasnippet solarized-theme alect-themes polymode markdown-mode ein flycheck auto-complete django-mode elpy smartparens ess org htmlize))
+   '(vmd-mode json-mode paredit latex-preview-pane sudo-edit docker-compose-mode vscode-icon dired-sidebar use-package typescript-mode ess-view-data po-mode eink-theme jedi magit csv-mode gist websocket dash simple-httpd js2-mode skewer-mode s deferred request request-deferred pyvenv epl pkg-info projectile popup poly-noweb poly-markdown julia-mode ivy highlight-indentation helm-make async helm find-file-in-project ctable ess-R-data-view company ac-helm helm-core poly-R yasnippet solarized-theme alect-themes polymode markdown-mode ein flycheck auto-complete django-mode elpy smartparens ess org htmlize))
  '(pdf-latex-command "xelatex")
  '(python-shell-interpreter "ipython")
  '(reb-re-syntax 'string)
